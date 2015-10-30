@@ -1,0 +1,19 @@
+# Site settings
+title: Dart Developer Documentation
+description: > # this means to ignore newlines until "baseurl:"
+  Dart is an open-source, scalable programming language, with robust
+  libraries and runtimes, for building web, server, and mobile apps.
+baseurl: "/server" # the subpath of your site, e.g. /blog/
+url: "https://dart-lang.github.io" # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown
+kramdown:
+  input: GFM # Enable GitHub Flavored Markdown (fenced code blocks)
+  hard_wrap: false
+
+gems:
+  - jekyll-sitemap
+
+# TODO: add analytics for this page
+# google_analytics_id: ???
