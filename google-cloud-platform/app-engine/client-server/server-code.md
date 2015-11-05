@@ -6,6 +6,7 @@ description: "Learn about the appengine APIs used by the server"
 ---
 
 # {{ page.title }} 
+{: .no_toc}
 
 ### Contents
 {: .no_toc}
@@ -15,11 +16,6 @@ description: "Learn about the appengine APIs used by the server"
 This section highlights certain methods from the server code
 and describes the lines that are related to App Engine
 and its services.
-
-### Contents
-{: .no_toc}
-
-{% include default_toc.html %}
 
 ## Accessing the Cloud Database service {#accessing-datastore}
 

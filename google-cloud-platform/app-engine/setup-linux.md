@@ -6,6 +6,7 @@ description: "How to set up the Linux for App Engine Managed VMs to run Dart pro
 ---
 
 # {{ page.title }}
+{: .no_toc}
 
 ### Contents
 {: .no_toc}
@@ -20,14 +21,12 @@ You need a 64-bit Linux system to run Dart on App Engine
 Managed VMs.
 
 ### Download and install VirtualBox
-{: .no_toc}
 
 See
 <a href="https://www.virtualbox.org/wiki/Linux_Downloads">Download VirtualBox
   for Linux hosts</a>.
 
 ### Get boot2docker and Docker 
-{: .no_toc}
 
 <aside class="alert alert-info" markdown="1">
 **Do I need boot2docker on Linux?**
@@ -67,7 +66,6 @@ $ sudo chmod 755 /usr/local/bin/docker
 </pre>
 
 ### Configure boot2docker
-{: .no_toc}
 
 Run the following commands to configure boot2docker:
 
@@ -79,7 +77,6 @@ $ boot2docker up
 </pre>
 
 ### Get the Docker images
-{: .no_toc}
 
 <ol markdown="1">
   <li markdown="1">Run the following command to set the required environment

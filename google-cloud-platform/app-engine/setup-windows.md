@@ -6,6 +6,7 @@ description: "How to set up the Windows for App Engine Managed VMs to run Dart p
 ---
   
 # {{ page.title }}
+{: .no_toc}
 
 ### Contents
 {: .no_toc}
@@ -16,7 +17,6 @@ Use the following instructions to set up a Windows machine for
 App Engine development.
 
 ## Download and install Docker and related tools
-{: .no_toc}
 
 * Go to the Docker website and follow the
   <a href="http://docs.docker.com/installation/windows/">
@@ -38,7 +38,6 @@ The configuration of boot2docker below handles this.
   `C:\Program Files\Oracle\VirtualBox\`. 
 
 ## Configure Docker
-{: .no_toc}
 
 <strong>Note</strong>: On Windows,
 the docker commands below should be 
@@ -74,7 +73,6 @@ to SSH into the VM instead.
   </ol>
 
 ## Get the Docker images
-{: .no_toc}
 
 <ol markdown="1">
 <li markdown="1"> `DOCKER_TLS_VERIFY`, `DOCKER_HOST`, and `DOCKER_CERT_PATH`.

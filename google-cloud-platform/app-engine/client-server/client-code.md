@@ -6,6 +6,7 @@ description: "Learn about the appengine APIs used by the client"
 ---
 
 # {{ page.title }} 
+{: .no_toc}
 
 ### Contents
 {: .no_toc}

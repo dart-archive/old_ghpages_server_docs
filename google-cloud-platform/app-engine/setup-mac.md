@@ -6,6 +6,7 @@ description: "How to set up the Mac for App Engine Managed VMs to run Dart progr
 ---
 
 # {{ page.title }}
+{: .no_toc}
 
 ### Contents
 {: .no_toc}
@@ -16,7 +17,6 @@ Use the following instructions to set up a Mac for
 App Engine development.
 
 ## Download and install Docker and related tools
-{: .no_toc}
 
   Run the boot2docker installer from
   <a href="https://github.com/boot2docker/osx-installer/releases" target="_blank">Github</a>.
@@ -35,7 +35,6 @@ The configuration of boot2docker below handles this.
 </aside>
 
 ## Configure Docker
-{: .no_toc}
 
   <ol markdown="1">
   <li markdown="1">Run the following commands to configure `boot2docker`.
@@ -62,7 +61,6 @@ following section.
   </ol>
 
 ## Get the Docker images
-{: .no_toc}
 
 <ol markdown="1">
   <li markdown="1">Call the following script to set the required environment

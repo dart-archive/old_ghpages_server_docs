@@ -6,6 +6,7 @@ description: "How to set up App Engine Managed VMs to run Dart programs."
 ---
 
 # {{ page.title }}
+{: .no_toc}
 
 ### Contents
 {: .no_toc}
@@ -69,7 +70,6 @@ The procedure for setting up Docker varies by platform:
 * [Linux](setup-linux.html)
 
 ### Set up a cloud project {#set-up-a-cloud-project}
-{: .no_toc}
 
 You need an App Engine project to develop and deploy
 an application to App Engine.
@@ -78,7 +78,6 @@ Console</a> and follow the instructions for creating a project.
 Give it a unique name.
 
 ### Install Google Cloud SDK
-{: .no_toc}
 
 You need a Google account, like gmail, to use the Google Cloud SDK.
 

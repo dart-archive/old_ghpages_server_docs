@@ -6,6 +6,7 @@ description: "A brief overview of the libraries used for creating a Dart runtime
 ---
 
 # {{ page.title }}
+{: .no_toc}
 
 ### Contents
 {: .no_toc}

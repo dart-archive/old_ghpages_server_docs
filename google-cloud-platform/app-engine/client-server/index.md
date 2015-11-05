@@ -6,6 +6,7 @@ description: "Learn to write a client and a server together"
 ---
 
 # {{ page.title }} 
+{: .no_toc}
 
 ### Contents
 {: .no_toc}
@@ -34,11 +35,6 @@ The server stores each item in Cloud Datastore so that when the
 user revisits the application, the item is still there.
 The client and server use JSON-formatted data
 to pass the list items back and forth. 
-
-### Contents
-{: .no_toc}
-
-{% include default_toc.html %}
 
 ## Get the client/server code and run it locally
 

@@ -7,6 +7,7 @@ has-permalinks: false
 ---
 
 # {{ page.title }}
+{: .no_toc}
 
 ### Contents
 {: .no_toc}

@@ -6,6 +6,7 @@ description: "Create a simple HelloWorld Dart app."
 ---
 
 # {{ page.title }} 
+{: .no_toc}
 
 ### Contents
 {: .no_toc}
