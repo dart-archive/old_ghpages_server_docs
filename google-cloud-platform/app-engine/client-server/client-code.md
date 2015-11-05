@@ -7,6 +7,11 @@ description: "Learn about the appengine APIs used by the client"
 
 # {{ page.title }} 
 
+### Contents
+{: .no_toc}
+
+{% include default_toc.html %}
+
 Two Dart files comprise the client application: `model.dart` and `index.dart`.
 In addition, the application contains one HTML file,
 <a href="https://github.com/dart-lang/appengine_samples/blob/master/clientserver/web/index.html">index.html</a>.

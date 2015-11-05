@@ -8,6 +8,11 @@ has-permalinks: false
 
 # {{ page.title }}
 
+### Contents
+{: .no_toc}
+
+{% include default_toc.html %}
+
 Managed VMs and custom runtimes on Google Cloud Platform are
 now available in beta.
 You can run Dart as a custom runtime on Managed VMs.

@@ -4,19 +4,10 @@ title: "TLS/SSL with Dart"
 description: "How to configure and use TLS/SSL with Dart, client and server."
 ---
 
-{% include toc.html %}
-
 # {{ page.title }}
 
 The Dart VM supports TLS/SSL out of the box. You can use Dart to connect to
 HTTPS resources, as well as create HTTPS servers.
-
-<aside class="alert alert-info" markdown="1">
-**Version note:**
-Before 1.13 is stable, the BoringSSL implementation will be available
-only on the
-[dev channel](/downloads/archive/).
-</aside>
 
 Starting with version 1.13, Dart uses BoringSSL, instead of openssl, as its
 secure networking library. The Chrome browser, and Chromium, have already moved

@@ -7,6 +7,11 @@ description: "Learn to write a client and a server together"
 
 # {{ page.title }} 
 
+### Contents
+{: .no_toc}
+
+{% include default_toc.html %}
+
 The HelloWorld sample showed you how to create, run, and test
 the simplest Dart app on an App Engine development server
 on your local machine.

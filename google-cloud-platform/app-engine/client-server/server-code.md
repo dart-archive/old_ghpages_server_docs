@@ -7,6 +7,11 @@ description: "Learn about the appengine APIs used by the server"
 
 # {{ page.title }} 
 
+### Contents
+{: .no_toc}
+
+{% include default_toc.html %}
+
 This section highlights certain methods from the server code
 and describes the lines that are related to App Engine
 and its services.

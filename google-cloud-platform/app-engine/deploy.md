@@ -7,6 +7,11 @@ description: "How to deploy a Dart application to the cloud on App Engine Manage
 
 # {{ page.title }}
 
+### Contents
+{: .no_toc}
+
+{% include default_toc.html %}
+
 To deploy your Dart application on App Engine Managed VMs,
 you need to create a Google Cloud project with a unique name.
 The project name provides part of the URL for your application.
@@ -17,13 +22,6 @@ The project name provides part of the URL for your application.
 
 As you follow these instructions,
 replace <i>&lt;my-project-name&gt;</i> with the name of your project.
-
-### Contents
-{: ._no_toc}
-
-<!--
-{% include default_toc.html %}
--->
 
 ## Deploy the application
 

@@ -6,6 +6,12 @@ description: "How to set up the Linux for App Engine Managed VMs to run Dart pro
 ---
 
 # {{ page.title }}
+
+### Contents
+{: .no_toc}
+
+{% include default_toc.html %}
+
 Use the following instructions to set up a Linux machine for
 App Engine development.
 

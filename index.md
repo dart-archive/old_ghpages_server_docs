@@ -5,6 +5,27 @@ description: "Information on server-side programming for Dart."
 has-permalinks: false
 ---
 
+<h2>Learn more about Dart on the Server</h2>
+
+I'm thinking of maybe making the following table the meat of the index page
+(with a bit of intro text) and the content below the line will become
+a new "server.md" page.
+
+* [Code lab: Write a Server App](codelab/)
+* [Dart on the Server](index.html)
+  * [Dart and Google Cloud Platform](google-cloud-platform/)
+    * [Dart on App Engine Managed VMs](google-cloud-platform/app-engine/)
+      * [Set Up for App Engine Development](google-cloud-platform/app-engine/setup.html)
+      * [Create and Run HelloWorld](google-cloud-platform/app-engine/run.html)
+      * [API Overview](google-cloud-platform/app-engine/api.html)
+      * [A Client-Server Example](google-cloud-platform/app-engine/client-server/)
+        * [The Client Code Explained](google-cloud-platform/app-engine/client-server/client-code.html)
+        * [The Server Code Explained](google-cloud-platform/app-engine/client-server/server-code.html)
+      * [Deploy a Dart App to App Engine](google-cloud-platform/app-engine/deploy.html)
+  * [TLS/SSL with Dart](tls-ssl.html)
+
+---
+
 # {{ page.title }}
 
 Dart is a great fit for server applications.
@@ -155,7 +176,7 @@ about moving from Node.js to Dart.
 Then, dive deep with our [articles](https://www.dartlang.org/articles/), examples,
 and other documentation.
 
-* [Beware the Next o' Pirates: Writer a Server App](/codelab/)
+* [Beware the Nest o' Pirates: Write a Server App](codelab/)
   shows you how to use the RPC package to write a RESTful server
   that you can message from the command line or from a client app.
 * [Articles on a variety of Dart subjects](https://www.dartlang.org/articles/),
