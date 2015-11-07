@@ -24,6 +24,8 @@ For an overview, watch this short video with Søren Gjesse.
 
 <iframe style="display:block;margin: 0 auto;" width="560" height="315" src="//www.youtube.com/embed/UqolCJsvD_g" frameborder="0" allowfullscreen></iframe>
 
+<p>&nbsp;</p>
+
 ## About App Engine and Managed VMs
 
 App Engine lets you build and run applications on Google's

@@ -2,9 +2,16 @@
 layout: default
 title: "TLS/SSL with Dart"
 description: "How to configure and use TLS/SSL with Dart, client and server."
+has-permalinks: false
 ---
 
 # {{ page.title }}
+{: .no_toc}
+
+### Contents
+{: .no_toc}
+
+{% include default_toc.html %}
 
 The Dart VM supports TLS/SSL out of the box. You can use Dart to connect to
 HTTPS resources, as well as create HTTPS servers.
