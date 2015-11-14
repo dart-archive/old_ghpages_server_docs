@@ -1,14 +1,18 @@
 ---
 layout: default
-title: "Table of Contents: Dart on the Server"
+title: "Server Home"
 description: "Use Dart for server-side programming."
 has-permalinks: false
 ---
+
+<div class="dartlogo" markdown="1" style="min-height:325px">
 
 # {{ page.title }}
 
 Dart is a great fit for server applications.
 Learn more in the following docs.
+
+## Contents
 
 * [Code Lab: Write a Server App](codelab/)
 * [Dart on the Server](server.html)

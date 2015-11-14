@@ -63,8 +63,8 @@ var server = await HttpServer.bindSecure('example.com',
 
 Code using HttpClient or SecureSocket.connect does not need to be changed,
 unless it is using additional trusted CAs, such as a self-signed custom
-authority used for testing.  Any calls to SecureSocket.initialize can be
-removed, as this function now does nothing at all.
+authority used for testing.  Any calls to SecureSocket.initialize should be
+removed, as this function no longer exists as of Dart 1.13.
 
 #### Trusting additional CAs
 
