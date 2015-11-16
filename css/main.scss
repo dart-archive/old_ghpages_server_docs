@@ -130,14 +130,14 @@ aside {
 }
 
 .piratemap {
-	background-image: url('/codelab/images/piratemap.jpg');
+	background-image: url('{{site.baseurl}}/codelab/images/piratemap.jpg');
 	background-repeat: no-repeat;
 	background-position: 400px;
 	background-size: 300px 300px;
 }
 
 .dartlogo {
-	background-image: url('/images/dart-logo.png');
+	background-image: url('{{site.baseurl}}/images/dart-logo.png');
 	background-repeat: no-repeat;
 	background-position: 500px;
 	background-size: 200px 200px;
