@@ -2,9 +2,9 @@
 layout: default
 title: "Set Up Windows for App Engine Development"
 short-title: "Setup"
-description: "How to set up the Windows for App Engine Managed VMs to run Dart programs." 
+description: "How to set up the Windows for App Engine Managed VMs to run Dart programs."
 ---
-  
+
 # {{ page.title }}
 {: .no_toc}
 
@@ -19,7 +19,7 @@ App Engine development.
 ## Download and install Docker and related tools
 
 * Go to the Docker website and follow the
-  <a href="http://docs.docker.com/installation/windows/">
+  <a href="http://docs.docker.com/engine/installation/windows/">
   installation instructions</a>.
   This installs VirtualBox, docker,
   the boot2docker management tool, and a few other
@@ -27,7 +27,7 @@ App Engine development.
 
 <aside class="alert alert-warning" markdown="1">
 **Note:**
-These instructions assume that v1.7.1 of Docker and boot2docker 
+These instructions assume that v1.7.1 of Docker and boot2docker
 are installed on your machine.
 However, Docker 1.7.0 is recommended inside the boot2docker VM.
 The configuration of boot2docker below handles this.
@@ -35,12 +35,12 @@ The configuration of boot2docker below handles this.
 
 * Put the VirtualBox tool, VBoxManage, in your path.
   The default installation directory is
-  `C:\Program Files\Oracle\VirtualBox\`. 
+  `C:\Program Files\Oracle\VirtualBox\`.
 
 ## Configure Docker
 
 <strong>Note</strong>: On Windows,
-the docker commands below should be 
+the docker commands below should be
 run inside the VM as the installation process does not install
 a Windows docker command line tool.
 
@@ -127,7 +127,7 @@ This command lists a number of images.
 </li>
 
 <li markdown="1"> Run the following command to print the version of the
-    Dart VM. 
+    Dart VM.
 
 <pre>
 $ docker run google/dart /usr/bin/dart --version

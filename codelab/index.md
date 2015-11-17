@@ -97,7 +97,7 @@ using one of the following options:
 
 <ul markdown="1">
 <li markdown="1">
-  Download the ZIP file, 
+  Download the ZIP file,
   [one-hour-codelab-master.zip](https://github.com/dart-lang/one-hour-codelab/archive/master.zip).
   Unzip the ZIP file, which creates a directory called
   `one-hour-codelab-master`.
@@ -141,7 +141,7 @@ The `server` directory contains the following files and directories:
   modified to use the server for storing and retrieving pirate names
 
 `7-serve`
-: Includes the final version of the server, 
+: Includes the final version of the server,
   modified to serve the client app
 
 `working-dir`
@@ -164,7 +164,7 @@ this code lab uses curl.)
 curl is already installed on most Macs and many Linux distributions.
 
 If you don't have curl, go to the
-[curl download](http://curl.haxx.se/download.html) page, 
+[curl download](http://curl.haxx.se/download.html) page,
 scroll down until you find the right version for your OS,
 and then download and install it.
 On Linux, you might be able to get curl by running:
@@ -198,8 +198,8 @@ those in `1-starter`:
 
 `piratesapi.dart`
 : Specifies the methods that the server makes remotely available.
-  
-`piratesnest.dart` 
+
+`piratesnest.dart`
 : Contains a `main()` function, which implements the main server entrypoint.
 
 `utils.dart`
@@ -268,7 +268,7 @@ class PiratesApi {
   `shanghaiAPirate()` returns a new Pirate object with a valid pirate name
    (example: Anne the Brave).
 
-#### bin/piratesnest.dart 
+#### bin/piratesnest.dart
 
 <pre>
 library piratesnest;
@@ -393,7 +393,7 @@ class PirateShanghaier {
 * Thanks to the `truePirate()` function, the server rejects any pirate name
   that uses one of the `_forbiddenAppellations`;
   for example "Markus the Wuss" is not allowed.
-  
+
 #### lib/common/messages.dart
 
 <pre>
@@ -558,7 +558,7 @@ Server listening on http://0.0.0.0:8088
 <li markdown="1">The `INFO` message is displayed by the logging code.
 </li>
 
-<li markdown="1"> When you start up the server, 
+<li markdown="1"> When you start up the server,
   you might see a dialog asking, 'Do you want the application "dart"
   to accept incoming network connections?' This dialog,
   from the computer's firewall, is asking if you want to be able to
@@ -609,7 +609,7 @@ do one of the following:
 <li markdown="1">Type the following at the command line:
 
 ```
-curl http://localhost:8088/piratesApi/v1/pirates 
+curl http://localhost:8088/piratesApi/v1/pirates
 ```
 </li>
 </ul>
@@ -635,7 +635,7 @@ this GET command.
 when messaging the server from the browser:
 
 ```
-[WARNING] rpc: 
+[WARNING] rpc:
 Response
   Status Code: 400
   ...
@@ -649,7 +649,7 @@ Response
 
 ## Step 4: Extend the server API {#step-four}
 
-In this step, you extend the server API to support POST 
+In this step, you extend the server API to support POST
 and DELETE requests so that you can store and delete pirate names
 in the list of pirates.
 
@@ -710,7 +710,7 @@ class PiratesApi {
   automatically serialized into the response body as JSON.
 
 <p>&nbsp;</p>
-To support deleting a pirate, 
+To support deleting a pirate,
 add a `firePirate()` method to the PiratesApi class.
 
 <pre>
@@ -842,7 +842,7 @@ directory contains the generated API.
 
 <div class="trydart-step-details" markdown="1">
 
-### &#9875; Create the client API using the RPC generator. 
+### &#9875; Create the client API using the RPC generator.
 
 From within the `working-dir` directory run the following commands:
 
@@ -863,7 +863,7 @@ You should see the following output:
   where _name_ is based on the name of the server API class. For example,
   if PiratesApi were defined in a file named `lib/server/ahoy.dart`,
   the client filename would still be `lib/client/piratesapi.dart`.
-  
+
 * This file allows you to connect your client app to the server, as you will
   see in [Step 6](#step-six).
 
@@ -917,7 +917,7 @@ class PirateFactory {
 
 * For each method marked with `ApiMethod` in `server/piratesapi.dart`,
   the RPC generator creates a corresponding method in `client/piratesapi.dart`.
-  
+
 * The RPC generator assumes that the server is messaging on
   `http://localhost:8080/`.  Our server uses port 8088,
   so the client app must override the default URL when instantiating
@@ -936,7 +936,7 @@ a Dart client using the generated client API.
 
 To save time, we've modified the Pirate example from the
 [client code lab](https://www.dartlang.org/codelabs/darrrt/)
-with additional UI for creating and maintaining a nest of pirates. 
+with additional UI for creating and maintaining a nest of pirates.
 We've also updated the UI to use
 [material design](http://www.google.com/design/spec/material-design/introduction.html#introduction-goals),
 as shown in the following screen shot:
@@ -1358,7 +1358,7 @@ modifies the server to require a Google Account login.
 The RPC package allows you to expose your API in the Discovery document format.
 This means that clients can download the API description in JSON and generate
 client stubs to call the server API using a Discover document generator,
-such as the 
+such as the
 [Discovery API generator for Dart](https://github.com/dart-lang/discoveryapis_generator).
 
 You can read more at
@@ -1366,9 +1366,10 @@ You can read more at
 
 ### &#9875; Read the tutorials.
 
-Learn more about Dart from [The Dart Tutorials](/docs/tutorials/).
-In particular,
-the [Write HTTP Clients & Servers](/docs/tutorials/httpserver/)
+Learn more about Dart from
+[The Dart Tutorials](https://www.dartlang.org/docs/tutorials/).
+In particular, the
+[Write HTTP Clients & Servers](https://www.dartlang.org/docs/tutorials/httpserver/)
 tutorial has more information on server-side programming.
 
 <hr>
