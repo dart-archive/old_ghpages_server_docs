@@ -1,8 +1,8 @@
 # Site settings
-title: Dart Developer Documentation
+title: Servers with Dart
 description: > # this means to ignore newlines until "baseurl:"
-  Dart is an open-source, scalable programming language, with robust
-  libraries and runtimes, for building web, server, and mobile apps.
+  Dart is a great fit for server applications.
+  Learn more in the following docs.
 baseurl: "/server" # the subpath of your site, e.g. /blog/
 url: "https://dart-lang.github.io" # the base hostname & protocol for your site
 

@@ -5,7 +5,7 @@ short-title: "Server Code"
 description: "Learn about the appengine APIs used by the server"
 ---
 
-# {{ page.title }} 
+# {{ page.title }}
 {: .no_toc}
 
 ### Contents
@@ -87,7 +87,7 @@ simple client assets work.
 
 Use the `commit()` method to commit an item to the datastore.
 The `commit()` method returns a
-<a href="http://api.dartlang.org/async/Future.html">Future</a>
+<a href="http://api.dartlang.org/stable/dart-async/Future-class.html">Future</a>
 to perform the operation asynchronously.
 
 <pre>
@@ -99,7 +99,7 @@ handleItems(HttpRequest request) {
   } else if (request.method == 'POST') {
     // Validate request, then commit new item to the datastore.
     ...
-        return <b>context.services.db.commit</b>(inserts: [item]).then((_) 
+        return <b>context.services.db.commit</b>(inserts: [item]).then((_)
   ...
   }   
 }       
@@ -135,7 +135,7 @@ Future&lt;List&lt;Item&gt;&gt; readItems() {
 </pre>
 
 The `order()` methods sorts the returned list in alphabetical order.
-      
+
 ## Using the rootkey
 
 The `rootKey` method is called by `handleItems()` and `readItems()` to
@@ -146,11 +146,10 @@ and identifies the entity group in which to put the item.
 <pre>
 rootKey() {
   var rootKey = <b>context.services.db.emptyKey.append(ItemsRoot, id: 1);</b>
-} 
+}
 </pre>
 
 ## What next?
 
 It's time to deploy your application:
 <a href="../deploy.html">Deploy a Dart Application on App Engine</a>.
-

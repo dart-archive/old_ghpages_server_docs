@@ -24,7 +24,7 @@ The BoringSSL library is a fork of OpenSSL, and is created and maintained by
 Google. It is smaller and more aggressively updated and maintained.  The
 management of certificates and keys, using PEM files, is easier to understand
 than the security database used by NSS. Information about this new open-source
-fork is at [chromium.org](boringssl).
+fork is at [chromium.org][boringssl].
 
 ## Examples
 
@@ -174,4 +174,4 @@ how to use Dart VM with TLS/SSL, we recommend asking on
 
 [so]: http://stackoverflow.com/tags/dart
 [issues]: https://github.com/dart-lang/sdk/issues
-[boringssl]:  https://www.chromium.org/Home/chromium-security/boringssl
+[boringssl]: https://www.chromium.org/Home/chromium-security/boringssl

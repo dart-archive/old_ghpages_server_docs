@@ -103,7 +103,7 @@ main() async {
 
 ### Get started
 
-Start with our [tutorials](http://www.dartlang.org/docs/tutorials).
+Start with our [tutorials](https://www.dartlang.org/docs/tutorials/).
 Once you're coding, consult the
 [API documentation](https://api.dartlang.org/apidocs/channels/stable/dartdoc-viewer/home).
 
