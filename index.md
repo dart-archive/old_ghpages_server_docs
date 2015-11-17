@@ -1,16 +1,14 @@
 ---
 layout: default
-title: "Server Home"
 description: "Use Dart for server-side programming."
 has-permalinks: false
 ---
 
 <div class="dartlogo" markdown="1" style="min-height:325px">
 
-# {{ page.title }}
+# {{ site.title }}
 
-Dart is a great fit for server applications.
-Learn more in the following docs.
+{{ site.description }}
 
 ## Contents
 
