@@ -15,5 +15,4 @@ kramdown:
 gems:
   - jekyll-sitemap
 
-# TODO: add analytics for this page
-# google_analytics_id: ???
+google_analytics_id: UA-26406144-23
