@@ -5,7 +5,7 @@ short-title: "Client-Server Example"
 description: "Learn to write a client and a server together"
 ---
 
-# {{ page.title }} 
+# {{ page.title }}
 {: .no_toc}
 
 ### Contents
@@ -34,7 +34,7 @@ HTTP request to the server, which responds.
 The server stores each item in Cloud Datastore so that when the
 user revisits the application, the item is still there.
 The client and server use JSON-formatted data
-to pass the list items back and forth. 
+to pass the list items back and forth.
 
 ## Get the client/server code and run it locally
 
@@ -53,7 +53,7 @@ to pass the list items back and forth.
   This project has dependencies on appengine, gcloud, memcache,
   along with a few others.
 <pre>
-$ cd clientserver 
+$ cd clientserver
 $ pub get
 </pre>
   </li>
@@ -101,8 +101,14 @@ env_variables:
   </li>
 
   <li markdown="1">
-Now run the client/server app. 
+Now run the client/server app.
 In a different terminal window, run `gcloud` like this:
+
+<aside class="alert alert-warning" markdown="1">
+**Note:**
+The <b>gcloud preview app run</b> command is deprecated.
+Please use the dev_appserver.py script instead.
+</aside>
 
 <pre>
 $ gcloud preview app run app.yaml

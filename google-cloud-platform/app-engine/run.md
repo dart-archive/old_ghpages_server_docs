@@ -5,7 +5,7 @@ short-title: "HelloWorld"
 description: "Create a simple HelloWorld Dart app."
 ---
 
-# {{ page.title }} 
+# {{ page.title }}
 {: .no_toc}
 
 ### Contents
@@ -69,7 +69,7 @@ dependencies:
 
 In this step, you create the `bin/server.dart` file
 that contains the `main()` method for the Dart program.
-The Dart runtime for App Engine always starts by running 
+The Dart runtime for App Engine always starts by running
 the `bin/server.dart` file.
 This file launches a Dart runtime instance on App Engine,
 and passes a method for handling HTTP requests to App Engine.
@@ -154,6 +154,12 @@ Run the application using the following `gcloud preview app`
 command. This command allows you to run the app locally using the
 App Engine development server.
 
+<aside class="alert alert-warning" markdown="1">
+**Note:**
+The <b>gcloud preview app run</b> command is deprecated.
+Please use the dev_appserver.py script instead.
+</aside>
+
 ```
 $ gcloud preview app run app.yaml
 ```
@@ -219,7 +225,7 @@ that fetches several megabytes of data.
   --host 127.0.0.1:7777
 </pre>
 </div>
- 
+
 ## View the app in the browser
 
 In your browser, navigate to `http://localhost:8080`.
