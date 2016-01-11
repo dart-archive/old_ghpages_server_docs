@@ -35,14 +35,11 @@ $ cd helloworld
 Create `app.yaml` with the following content:
 
 <pre>
-version: helloworld
 <strong>runtime: custom</strong>
 <strong>vm: true</strong>
 api_version: 1
 </pre>
 
-The `version` field in the `app.yaml` file is the way that App Engine
-distinguishes between different deployed application instances.
 
 Create `Dockerfile` with the following content:
 
@@ -84,16 +81,20 @@ Now, create `bin/server.dart` with the code
 for the HelloWorld example:
 
 ``` dart
-import 'dart:io';
 
+import 'dart:io';
 import 'package:appengine/appengine.dart';
 
-main() {
+main(List<String> args) {
+  int port = 8080;
+  if (args.length > 0) port = int.parse(args[0]);
+
   runAppEngine((HttpRequest request) {
     request.response..write('Hello, world!')
                     ..close();
-  });
+  }, port: port);
 }
+
 ```
 
 Your directory structure should look like this:
@@ -111,6 +112,9 @@ Your directory structure should look like this:
     This function handles HTTP requests.
     In the HelloWorld example, the HTTP request handler
     function is `requestHandler`.
+    It also takes an optional argument of the port it should use
+    to connect to AppEngine infrastructure. We'll pass this port when
+    developing locally.
 
 *   The request handler receives an
 <a href="https://api.dartlang.org/dart_io/HttpRequest.html" target="_blank">HttpRequest</a>
@@ -150,19 +154,9 @@ This step can take awhile but needs to be done only once.
 
 ## Run the app using App Engine
 
-Run the application using the following `gcloud preview app`
+Run the application using the following `dev_appserver.py --custom_entrypoint "dart bin/server.dart {port}" app.yaml`
 command. This command allows you to run the app locally using the
 App Engine development server.
-
-<aside class="alert alert-warning" markdown="1">
-**Note:**
-The <b>gcloud preview app run</b> command is deprecated.
-Please use the dev_appserver.py script instead.
-</aside>
-
-```
-$ gcloud preview app run app.yaml
-```
 
 The `gcloud` output includes lines similar to the following:
 
@@ -184,20 +178,6 @@ created.
 INFO: default: "GET /_ah/start HTTP/1.1" 200 2
 INFO: default: "GET /_ah/health?IsLastSuccessful=no HTTP/1.1" <strong>200 2</strong>
 </pre>
-
-<aside class="alert alert-info" markdown="1">
-**Note:**
-If the `preview app run` command fails with the following error:
-
-<pre>
-The --custom_entrypoint flag must be set for custom runtimes
-ERROR: (gcloud.preview.app.run) DevAppSever failed with error code [1]
-</pre>
-
-See
-[Stack Overflow](http://stackoverflow.com/questions/31214555/setting-up-app-engine-for-dart-gcloud-preview-error)
-for a suggested workaround.
-</aside>
 
 The "200 2" status indicates a successful launch. The first few times that
 you build you may see some `50x` errors. Also, this step can take awhile
@@ -261,8 +241,10 @@ Deploying helloworld to App Engine is as simple as running the following
 command:
 
 <pre>
-$ gcloud preview app deploy app.yaml
+$ gcloud preview app deploy app.yaml --promote
 </pre>
+
+The --promote option makes the newly deployed version default.
 
 Note that this command can take awhile.
 
