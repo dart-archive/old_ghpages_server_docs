@@ -59,7 +59,7 @@ name: helloworld
 version: 0.1.0
 author: <your name>
 dependencies:
-  appengine: '>=0.2.1 <0.3.0'
+  appengine: ^0.3.0
 ```
 
 ## Create the Dart source file
@@ -155,8 +155,16 @@ This step can take awhile but needs to be done only once.
 ## Run the app using App Engine
 
 Run the application using the following `dev_appserver.py --custom_entrypoint "dart bin/server.dart {port}" app.yaml`
-command. This command allows you to run the app locally using the
-App Engine development server.
+command. This command allows you to run the app locally using the App Engine development server.
+
+<div style="padding:5px;background-color:LightYellow;border-style:solid;border-width:1px;border-color:WhiteSmoke;" markdown="1">
+  **Note** The Dart VM is run from the folder containing the app.yaml file. So if you were
+  in an outer folder, you would need to write:
+  `dev_appserver.py --custom_entrypoint "dart bin/server.dart {port}" helloworld/app.yaml`
+
+  **Tip:** You can use the Observatory to debug your code using the below:
+   `dev_appserver.py --custom_entrypoint "dart --enable-vm-service=8181 bin/server.dart {port}" helloworld/app.yaml`
+</div>
 
 The `gcloud` output includes lines similar to the following:
 
