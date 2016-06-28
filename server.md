@@ -176,7 +176,7 @@ You have many options. Here are a few:
 * Google Cloud Platform; for details on Dart support, see
   [Dart and Google Cloud Platform](google-cloud-platform)
 * [Heroku](https://github.com/igrigorik/heroku-buildpack-dart)  
-* [Sourcevoid][https://www.sourcevoid.com/]
+* [Sourcevoid](https://www.sourcevoid.com/)
 
 In addition, Dart runs on most cloud providers, such as
 Amazon's EC2, Digital Ocean, and more.
