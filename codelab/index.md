@@ -463,7 +463,7 @@ import 'package:rpc/api.dart';
 
 import '../common/messages.dart';
 import '../common/utils.dart';
-
+s
 // This class defines the interface that the server provides.
 <b>@ApiClass(version: 'v1')</b>
 class PiratesApi {
@@ -1158,7 +1158,7 @@ client app.
 Add the `http_server` dependency to the `pubspec.yaml` file, which
 is directly under `working-dir`.
 
-``` yaml
+<pre>
 name: server_code_lab
 version: 0.1.0
 author: Dart Team <misc@dartlang.org>
@@ -1173,7 +1173,7 @@ dependencies:
   <b>http_server: ^0.9.5+1</b>
   logging_handlers: ^0.8.0
   rpc: ^0.3.0
-```
+</pre>
 <div class="trydart-filename">pubspec.yaml</div>
 
 <p>&nbsp;</p>
