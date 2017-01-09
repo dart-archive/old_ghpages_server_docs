@@ -787,13 +787,13 @@ adds "Shams the Destroyer" to the list of pirates:
 On Mac and Linux:
 
 ```
-curl -d '{"name":"Shams", "appellation":"Destroyer"}' http://localhost:8088/piratesApi/v1/pirate
+curl -H "Content-Type: application/json" -d '{"name":"Shams", "appellation":"Destroyer"}' http://localhost:8088/piratesApi/v1/pirate
 ```
 
 On Windows:
 
 ```
-curl -d "{\"name\":\"Shams\",\"appellation\":\"Destroyer\"}" http://localhost:8088/piratesApi/v1/pirate
+curl -H "Content-Type: application/json" -d "{\"name\":\"Shams\",\"appellation\":\"Destroyer\"}" http://localhost:8088/piratesApi/v1/pirate
 ```
 
 The `firePirate` method was annotated like this:
