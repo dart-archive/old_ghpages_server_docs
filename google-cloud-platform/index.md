@@ -9,7 +9,7 @@ has-permalinks: false
 # {{ page.title }} <img src="images/GoogleCloudPlatform-logo.png" alt="logo for Google Cloud Platform">
 
 **Note**: There are many ways to host a Dart server. You might also be
-interested in [Heroku][] and [Sourcevoid][].
+interested in [Firebase][], [Heroku][], and [Sourcevoid][].
 
 [Google Cloud Platform](https://cloud.google.com/)
 provides a set of cloud-based services that allow you to build,
@@ -19,29 +19,28 @@ and reliable infrastructure for your web, mobile, and backend solutions.
 Cloud libraries and prepackaged Docker images developed for the
 Dart platform provide support for the following services:
 
-App Engine Managed VMs
-: See [Dart on App Engine Managed VMs](app-engine) to learn how to
-  run your Dart application on Managed VMs as a custom runtime.
+App Engine Custom Runtimes for the Flex Environment:
+: See [Dart on App Engine Custom Runtimes for the Flex
+  Environment](app-engine-flex) to learn how to run your Dart
+  application on Google App Engine using the flexible environment.
 
 Google Compute Engine
-: See
-  [Running on Google Compute Engine](https://github.com/dart-lang/dart_docker/tree/master/hello#running-on-google-compute-engine) for information
+: See [Running on Google Compute
+  Engine](https://github.com/dart-lang/dart_docker/tree/master/hello#running-on-google-compute-engine) for information
   on how to use Google Compute Engine for your application.
 
 Google Container Engine
 : See
-  [Running on Google Container Engine](https://github.com/dart-lang/dart_docker/tree/master/hello#running-on-google-container-engine)
+  [Running on Google Container
+  Engine](https://github.com/dart-lang/dart_docker/tree/master/hello#running-on-google-container-engine)
   for information on how to take advantage of clusters of containers.
 
-Some of these features are in early releases and will be changing.
+**Note**: Google App Engine Managed VMs is deprecated and replaced with
+[App Engine Custom Runtimes for the Flexible
+Environment](https://cloud.google.com/appengine/docs/flexible/custom-runtimes/).
+For more information, see [Dart on App Engine Custom Runtimes for the Flex
+Environment](app-engine-flex).
 
-All of these features use container technology&mdash;specifically,
-[Docker](https://www.docker.com/).
-For more information on setting up Docker for any of these services, see
-the [Configure Docker](app-engine/setup.html#configure-docker) and
-[Get the Docker images](app-engine/setup.html#get-the-docker-images)
-sections of the [Dart on App Engine Managed VMs](app-engine/)
-documentation.
-
+[Firebase]: https://firebase.google.com/
 [Heroku]: https://github.com/igrigorik/heroku-buildpack-dart
 [Sourcevoid]: https://www.sourcevoid.com/
