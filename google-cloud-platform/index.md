@@ -9,7 +9,7 @@ has-permalinks: false
 # {{ page.title }} <img src="images/GoogleCloudPlatform-logo.png" alt="logo for Google Cloud Platform">
 
 **Note**: There are many ways to host a Dart server. You might also be
-interested in [Firebase][], [Heroku][], and [Sourcevoid][].
+interested in [Firebase][] and [Sourcevoid][].
 
 [Google Cloud Platform](https://cloud.google.com/)
 provides a set of cloud-based services that allow you to build,

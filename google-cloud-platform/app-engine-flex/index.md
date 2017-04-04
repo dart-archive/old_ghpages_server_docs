@@ -17,8 +17,8 @@ environment.
 **Note:** App Engine Managed VMs are deprecated and replaced by
 the flexible environment.
 
-The App Engine flexible environment,
-currently in beta, allows you to extend App Engine's standard environment
+The App Engine flexible environment
+allows you to extend App Engine's standard environment
 using Docker containers. For information on the differences
 between standard and flexible environments, see
 [App Engine Flexible Environment for Users of App Engine Standard
