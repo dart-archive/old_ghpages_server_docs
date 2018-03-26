@@ -463,7 +463,7 @@ import 'package:rpc/api.dart';
 
 import '../common/messages.dart';
 import '../common/utils.dart';
-s
+
 // This class defines the interface that the server provides.
 <b>@ApiClass(version: 'v1')</b>
 class PiratesApi {
