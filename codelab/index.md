@@ -16,6 +16,13 @@ you use it to generate the corresponding API for a Dart client app.
 Finally, you extend the server using the HTTP server library
 to serve the Dart client directly.
 
+<div class="trydart-note" markdown="1">
+<strong>Note:</strong>
+This code lab **has not been updated to Dart 2**.
+For information on what has changed since Dart 1.x, see the
+[Dart 2 page](https://www.dartlang.org/dart-2).
+</div>
+
 This code lab assumes that you are comfortable reading Dart code.
 If you'd like a more thorough introduction to the Dart language, see
 the [client code lab](https://www.dartlang.org/codelabs/darrrt/) or the
