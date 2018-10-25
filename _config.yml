@@ -12,7 +12,7 @@ kramdown:
   input: GFM # Enable GitHub Flavored Markdown (fenced code blocks)
   hard_wrap: false
 
-gems:
+plugins:
   - jekyll-sitemap
 
 google_analytics_id: UA-26406144-23
